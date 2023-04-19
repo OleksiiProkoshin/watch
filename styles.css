@@ -32,19 +32,54 @@ img {
 }
 
 .container {
-    padding: 0 35px;
+    padding: 0 20px;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 375px;
     width: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; */
 }
 
 .svg {
     display: block;
+}
+
+/* ============HERO============ */
+.hero__wrapper {
+    background-color: #141414;
+}
+
+.hero__hdr {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    padding-top: 122px;
+}
+
+.watch-swiper {
+    padding-top: 60px;
+}
+
+.hero__dskr {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    padding: 40px 0 40px 87px;
+}
+
+.hero__img {
+    padding-bottom: 40px;
 }
