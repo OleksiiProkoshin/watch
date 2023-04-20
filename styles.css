@@ -38,20 +38,19 @@ img {
     width: 100%;
 }
 
-body {
-    /* font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; */
-}
-
-.svg {
-    display: block;
+.swiper-button-next,
+.swiper-button-prev {
+    position: unset;
+    margin: 0;
+    padding: 0;
+    display: unset;
 }
 
 /* ============HERO============ */
+
 .hero__wrapper {
     background-color: #141414;
+    position: relative;
 }
 
 .hero__hdr {
@@ -65,8 +64,62 @@ body {
     padding-top: 122px;
 }
 
-.watch-swiper {
+.watch_deskr-wrapper {
     padding-top: 60px;
+
+}
+
+.watch-swiper {
+    width: 266px;
+    height: 200px;
+    margin-left: 0;
+    background-color: #1E2827;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #FFFFFF;
+    font-size: 9px;
+    position: absolute;
+    top: 522px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev:after {
+    left: 20px;
+}
+
+.swiper-button-next:after {
+    left: 64px;
+}
+
+.carousel__number-of-watches {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-align: end;
+    margin-right: 69px;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    justify-content: flex-end;
+}
+
+.dash {
+    width: 32px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    margin: 0 6px;
 }
 
 .hero__dskr {
@@ -77,9 +130,88 @@ body {
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    padding: 40px 0 40px 87px;
+    padding: 49px 0 40px 87px;
 }
 
 .hero__img {
     padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .hero__hdr {
+        font-size: 60px;
+        line-height: 1.03;
+        max-width: 653px;
+        padding-top: 148px;
+    }
+
+    .watch_deskr-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .watch-swiper {
+        width: 436px;
+        height: 255px;
+    }
+
+    .hero__dskr {
+        padding: 0;
+        max-width: 248px;
+    }
+
+    .hero__img {
+        min-width: 704px;
+        padding: 40px 0 64px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+
+    .container {
+        max-width: 1440px;
+        padding: 0 132px;
+    }
+
+    .hero__hdr {
+        max-width: 750px;
+    }
+
+    .watch_deskr-wrapper {
+        padding-top: 122px;
+    }
+
+    .watch_deskr-wrapper {
+        padding-bottom: 140px;
+    }
+
+    .hero__wrapper {
+        position: relative;
+    }
+
+    .watch-swiper {
+        width: 436px;
+        height: 255px;
+    }
+
+    .hero__dskr {
+        position: absolute;
+        top: 148px;
+        right: 132px;
+    }
+
+    .hero__img {
+        max-width: 676px;
+        position: absolute;
+        top: 315px;
+        right: 132px;
+        padding: 0;
+    }
 }
