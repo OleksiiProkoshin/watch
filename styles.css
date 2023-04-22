@@ -93,10 +93,12 @@ img {
 
 .swiper-button-prev:after {
     left: 20px;
+    opacity: hidden;
 }
 
 .swiper-button-next:after {
     left: 64px;
+    opacity: hidden;
 }
 
 .carousel__number-of-watches {
@@ -242,10 +244,14 @@ img {
 
     .swiper-button-prev:after {
         left: 132px;
+        font-size: 12px;
+        text-align: center;
     }
 
     .swiper-button-next:after {
         left: 184px;
+        font-size: 12px;
+        text-align: center;
     }
 
     .carousel__number-of-watches {
